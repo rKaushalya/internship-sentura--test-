@@ -25,7 +25,7 @@ export class UserForm extends Component<UserProps, UserState> {
 
     constructor(props: any) {
         super(props);
-        this.api = axios.create({baseURL: `https://87bf6c8a4f5442b68f1c8915bd1d3f42.weavy.io/api/post`});
+        this.api = axios.create({baseURL: `https://87bf6c8a4f5442b68f1c8915bd1d3f42.weavy.io/api/`});
         this.accessToken = "wys_3N7jqRtakTENfWF8eXqjEtsHd9Qp9C4HGEOK";
         this.state = {
             user_id: "",
