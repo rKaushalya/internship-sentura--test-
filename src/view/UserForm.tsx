@@ -24,7 +24,7 @@ export class UserForm extends Component<UserProps,UserState> {
 
     constructor(props: any) {
         super(props);
-        this.api = axios.create({baseURL: `http://localhost:4000`});
+        this.api = axios.create({baseURL: `https://87bf6c8a4f5442b68f1c8915bd1d3f42.weavy.io/`});
         this.state = {
             user_id: "",
             email: "",
@@ -57,9 +57,9 @@ export class UserForm extends Component<UserProps,UserState> {
                                             className="appearance-none rounded w-11/12 outline-gray-800
                                             focus:outline-blue-400 text-[16px] p-2 border-2 border-gray-300"
                                             id="inline-full-name" type="text"
-                                            name={"username"}
-                                            /*value={this.state.username}
-                                            onChange={this.handleMessageInputOnChange}*/
+                                            name={"user_id"}
+                                            value={this.state.user_id}
+                                            onChange={this.handleMessageInputOnChange}
                                         />
                                     </div>
 
@@ -69,9 +69,9 @@ export class UserForm extends Component<UserProps,UserState> {
                                             className="appearance-none rounded w-11/12 outline-gray-800
                                             focus:outline-blue-400 text-[16px] p-2 border-2 border-gray-300"
                                             id="inline-full-name" type="email"
-                                            name={"username"}
-                                            /*value={this.state.username}
-                                            onChange={this.handleMessageInputOnChange}*/
+                                            name={"email"}
+                                            value={this.state.email}
+                                            onChange={this.handleMessageInputOnChange}
                                         />
                                     </div>
 
@@ -81,7 +81,11 @@ export class UserForm extends Component<UserProps,UserState> {
                                         <input
                                             className="appearance-none rounded w-11/12
                                             focus:outline-blue-400 text-[16px] p-2 border-2 border-gray-300"
-                                            id="inline-password" type="text"/>
+                                            id="inline-password" type="text"
+                                            name={"givenName"}
+                                            value={this.state.givenName}
+                                            onChange={this.handleMessageInputOnChange}
+                                        />
                                     </div>
 
                                     <div className="mt-5">
@@ -90,9 +94,9 @@ export class UserForm extends Component<UserProps,UserState> {
                                             className="appearance-none rounded w-11/12 outline-gray-800
                                             focus:outline-blue-400 text-[16px] p-2 border-2 border-gray-300"
                                             id="inline-full-name" type="email"
-                                            name={"username"}
-                                            /*value={this.state.username}
-                                            onChange={this.handleMessageInputOnChange}*/
+                                            name={"middleName"}
+                                            value={this.state.middleName}
+                                            onChange={this.handleMessageInputOnChange}
                                         />
                                     </div>
 
@@ -102,9 +106,9 @@ export class UserForm extends Component<UserProps,UserState> {
                                             className="appearance-none rounded w-11/12 outline-gray-800
                                             focus:outline-blue-400 text-[16px] p-2 border-2 border-gray-300"
                                             id="inline-full-name" type="email"
-                                            name={"username"}
-                                            /*value={this.state.username}
-                                            onChange={this.handleMessageInputOnChange}*/
+                                            name={"name"}
+                                            value={this.state.name}
+                                            onChange={this.handleMessageInputOnChange}
                                         />
                                     </div>
 
@@ -114,9 +118,9 @@ export class UserForm extends Component<UserProps,UserState> {
                                             className="appearance-none rounded w-11/12 outline-gray-800
                                             focus:outline-blue-400 text-[16px] p-2 border-2 border-gray-300"
                                             id="inline-full-name" type="email"
-                                            name={"username"}
-                                            /*value={this.state.username}
-                                            onChange={this.handleMessageInputOnChange}*/
+                                            name={"familyName"}
+                                            value={this.state.familyName}
+                                            onChange={this.handleMessageInputOnChange}
                                         />
                                     </div>
 
@@ -126,9 +130,9 @@ export class UserForm extends Component<UserProps,UserState> {
                                             className="appearance-none rounded w-11/12 outline-gray-800
                                             focus:outline-blue-400 text-[16px] p-2 border-2 border-gray-300"
                                             id="inline-full-name" type="email"
-                                            name={"username"}
-                                            /*value={this.state.username}
-                                            onChange={this.handleMessageInputOnChange}*/
+                                            name={"nickName"}
+                                            value={this.state.nickName}
+                                            onChange={this.handleMessageInputOnChange}
                                         />
                                     </div>
 
@@ -138,9 +142,9 @@ export class UserForm extends Component<UserProps,UserState> {
                                             className="appearance-none rounded w-11/12 outline-gray-800
                                             focus:outline-blue-400 text-[16px] p-2 border-2 border-gray-300"
                                             id="inline-full-name" type="email"
-                                            name={"username"}
-                                            /*value={this.state.username}
-                                            onChange={this.handleMessageInputOnChange}*/
+                                            name={"phoneNumber"}
+                                            value={this.state.phoneNumber}
+                                            onChange={this.handleMessageInputOnChange}
                                         />
                                     </div>
 
@@ -150,9 +154,9 @@ export class UserForm extends Component<UserProps,UserState> {
                                             className="appearance-none rounded w-11/12 outline-gray-800
                                             focus:outline-blue-400 text-[16px] p-2 border-2 border-gray-300"
                                             id="inline-full-name" type="email"
-                                            name={"username"}
-                                            /*value={this.state.username}
-                                            onChange={this.handleMessageInputOnChange}*/
+                                            name={"comment"}
+                                            value={this.state.comment}
+                                            onChange={this.handleMessageInputOnChange}
                                         />
                                     </div>
 
@@ -162,9 +166,9 @@ export class UserForm extends Component<UserProps,UserState> {
                                             className="appearance-none rounded w-11/12 outline-gray-800
                                             focus:outline-blue-400 text-[16px] p-2 border-2 border-gray-300"
                                             id="inline-full-name" type="file"
-                                            name={"username"}
-                                            /*value={this.state.username}
-                                            onChange={this.handleMessageInputOnChange}*/
+                                            name={"picture"}
+                                            value={this.state.picture}
+                                            onChange={this.handleMessageInputOnChange}
                                         />
                                     </div>
 
@@ -173,8 +177,15 @@ export class UserForm extends Component<UserProps,UserState> {
                                 <button
                                     className="shadow bg-blue-400 w-11/12 text-white hover:bg-blue-900 font-bold py-2 px-4 rounded
                                 text-[16px] mt-5"
+                                    type="button" onClick={this.onSaveBtnClick}>
+                                    Save
+                                </button>
+
+                                <button
+                                    className="shadow bg-blue-400 w-11/12 text-white hover:bg-blue-900 font-bold py-2 px-4 rounded
+                                text-[16px] mt-5"
                                     type="button" /*onClick={this.checkAdmin}*/>
-                                    Login
+                                    Update
                                 </button>
                             </div>
                         </form>
@@ -192,6 +203,31 @@ export class UserForm extends Component<UserProps,UserState> {
         this.setState({
             [name]: value
         });
+    }
+
+    private onSaveBtnClick = () => {
+
+        try {
+            this.api.post('/post', {
+                user_id: this.state.user_id,
+                email: this.state.email,
+                givenName: this.state.givenName,
+                middleName: this.state.middleName,
+                name: this.state.name,
+                familyName: this.state.familyName,
+                nickName: this.state.nickName,
+                phoneNumber: this.state.phoneNumber,
+                comment: this.state.comment,
+                picture: this.state.picture
+
+            }).then((res: { data: any}) => {
+                console.log(res);
+            }).catch((error: any)=> {
+                console.error('Axios Error', error);
+            });
+        } catch (error) {
+            console.error('Error submitting data:', error);
+        }
     }
 
 
